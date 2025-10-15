@@ -84,6 +84,7 @@ class BinaryUtil{
 
     // Level Wise Traversal   :  W'll introduce the for loop in the 3rd step.
     public static void printLevelWise(Node root){
+        if(root == null) return;
         LinkedList<Node> q = new LinkedList<>();
         q.add(root);
 
@@ -95,6 +96,8 @@ class BinaryUtil{
                 sum += n.data;
                 System.out.println("Elements at this level :" + n.data);
     
+                if (i < size - 1) System.out.print(" ");
+
                 if(n.leftChild != null){
                     q.addLast(n.leftChild);
                 }
