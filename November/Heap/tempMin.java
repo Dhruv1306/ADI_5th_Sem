@@ -1,5 +1,5 @@
 public class tempMin {
-    static int[] h = new int[100];
+    static int[] h = new int[100];     // h = heap
     static int hSize = -1;
 
     static void Insert(int element){
